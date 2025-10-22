@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upgrader - TG-CASE 2026</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"><h1 class="logo-text">TG-CASE</h1></div>
+        <ul class="nav-menu">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="top.html">Топ</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="upgrader.html" class="active">Upgrader</a></li>
+            <li><a href="profile.html">Профиль</a></li>
+        </ul>
+        <button class="btn-login" id="loginBtn">Войти</button>
+    </nav>
+
+    <section class="section">
+        <h1 class="section-title">Апгрейд предметов</h1>
+        <div class="upgrader-container">
+            <div class="upgrade-box">
+                <h3>ВАШ ПРЕДМЕТ</h3>
+                <div class="item-slot" id="sourceItem">
+                    <p>Выберите предмет с вашего инвентаря</p>
+                </div>
+            </div>
+            <div class="upgrade-arrow">➜</div>
+            <div class="upgrade-box">
+                <h3>ПРЕДМЕТ ДЛЯ АПГРЕЙДА</h3>
+                <div class="item-slot" id="targetItem">
+                    <p>Выберите предмет для апгрейда</p>
+                </div>
+            </div>
+        </div>
+        <div class="upgrade-stats">
+            <div class="stat">
+                <span>ШАНС</span>
+                <span id="chance">0%</span>
+            </div>
+            <div class="stat">
+                <span>КОЭФФИЦИЕНТ</span>
+                <span id="coefficient">0x</span>
+            </div>
+        </div>
+        <button class="btn-upgrade">АПГРЕЙД</button>
+    </section>
+
+    <footer class="footer">
+        <p>© 2025 tg-case.ru</p>
+        <div class="footer-links">
+            <a href="#">Пользовательское соглашение</a>
+            <a href="#">Privacy Policy</a>
+            <a href="faq.html">FAQ</a>
+        </div>
+    </footer>
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

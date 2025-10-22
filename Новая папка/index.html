@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TG-CASE 2026 - Открытие кейсов нового поколения</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="icon" href="assets/images/favicon.ico">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <h1 class="logo-text">TG-CASE</h1>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="index.html" class="active">Главная</a></li>
+            <li><a href="top.html">Топ</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="upgrader.html">Upgrader</a></li>
+            <li><a href="profile.html">Профиль</a></li>
+        </ul>
+        <button class="btn-login" id="loginBtn">Войти</button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title" data-text="ОТКРЫВАЙ БУДУЩЕЕ">ОТКРЫВАЙ БУДУЩЕЕ</h1>
+            <p class="hero-subtitle">Кейсы нового поколения с передовыми технологиями 2026</p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">23K+</span>
+                    <span class="stat-label">Игроков</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">1M+</span>
+                    <span class="stat-label">Открыто кейсов</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">99%</span>
+                    <span class="stat-label">Довольных</span>
+                </div>
+            </div>
+        </div>
+        <canvas id="webglCanvas"></canvas>
+    </section>
+
+    <!-- Free Cases -->
+    <section class="section free-cases">
+        <h2 class="section-title">БЕСПЛАТНЫЕ КЕЙСЫ</h2>
+        <div class="cases-grid free">
+            <div class="case-card free-case" data-sound="hover">
+                <div class="case-icon">🎁</div>
+                <h3>Каждые 3 дня</h3>
+                <p class="case-price">0 ⭐</p>
+                <p class="case-condition">10 рефералов</p>
+                <div class="countdown" data-timer="3d">02:14:35</div>
+                <button class="btn-open">Открыть</button>
+            </div>
+            <div class="case-card free-case" data-sound="hover">
+                <div class="case-icon">⏰</div>
+                <h3>Каждые 24 часа</h3>
+                <p class="case-price">0 ⭐</p>
+                <p class="case-condition">Подписка на канал</p>
+                <div class="countdown" data-timer="24h">05:42:18</div>
+                <button class="btn-open">Открыть</button>
+            </div>
+            <div class="case-card free-case" data-sound="hover">
+                <div class="case-icon">📅</div>
+                <h3>Каждые 7 дней</h3>
+                <p class="case-price">0 ⭐</p>
+                <p class="case-condition">Пополнение 1000₽</p>
+                <div class="countdown" data-timer="7d">01:09:23</div>
+                <button class="btn-open">Открыть</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exclusive Cases -->
+    <section class="section exclusive-cases">
+        <h2 class="section-title">ЭКСКЛЮЗИВНЫЕ КЕЙСЫ</h2>
+        <div class="cases-grid exclusive">
+            <div class="case-card" data-case="bomj" data-sound="hover">
+                <div class="case-badge">-43%</div>
+                <div class="case-3d">
+                    <div class="case-box"></div>
+                </div>
+                <h3>Бомж</h3>
+                <p class="case-price"><span class="old-price">149</span> 85 ⭐</p>
+                <button class="btn-open">Открыть</button>
+            </div>
+            <div class="case-card" data-case="newbie" data-sound="hover">
+                <div class="case-badge">-31%</div>
+                <div class="case-3d">
+                    <div class="case-box"></div>
+                </div>
+                <h3>Новичок</h3>
+                <p class="case-price"><span class="old-price">245</span> 170 ⭐</p>
+                <button class="btn-open">Открыть</button>
+            </div>
+            <div class="case-card" data-case="student" data-sound="hover">
+                <div class="case-badge">-40%</div>
+                <div class="case-3d">
+                    <div class="case-box"></div>
+                </div>
+                <h3>Школьник</h3>
+                <p class="case-price"><span class="old-price">499</span> 299 ⭐</p>
+                <button class="btn-open">Открыть</button>
+            </div>
+            <div class="case-card popular" data-case="lucky" data-sound="hover">
+                <div class="case-badge popular-badge">ХИТ</div>
+                <div class="case-3d">
+                    <div class="case-box"></div>
+                </div>
+                <h3>Везунчик</h3>
+                <p class="case-price"><span class="old-price">749</span> 499 ⭐</p>
+                <button class="btn-open">Открыть</button>
+            </div>
+            <div class="case-card" data-case="profi" data-sound="hover">
+                <div class="case-badge">-23%</div>
+                <div class="case-3d">
+                    <div class="case-box"></div>
+                </div>
+                <h3>Профи</h3>
+                <p class="case-price"><span class="old-price">1300</span> 999 ⭐</p>
+                <button class="btn-open">Открыть</button>
+            </div>
+            <div class="case-card" data-case="dev" data-sound="hover">
+                <div class="case-badge">-18%</div>
+                <div class="case-3d">
+                    <div class="case-box"></div>
+                </div>
+                <h3>Разработчик</h3>
+                <p class="case-price"><span class="old-price">2250</span> 1850 ⭐</p>
+                <button class="btn-open">Открыть</button>
+            </div>
+            <div class="case-card" data-case="gamer" data-sound="hover">
+                <div class="case-badge">-13%</div>
+                <div class="case-3d">
+                    <div class="case-box"></div>
+                </div>
+                <h3>Лудоман</h3>
+                <p class="case-price"><span class="old-price">3000</span> 2600 ⭐</p>
+                <button class="btn-open">Открыть</button>
+            </div>
+            <div class="case-card" data-case="rich" data-sound="hover">
+                <div class="case-badge">-6%</div>
+                <div class="case-3d">
+                    <div class="case-box"></div>
+                </div>
+                <h3>Мажор</h3>
+                <p class="case-price"><span class="old-price">5000</span> 4700 ⭐</p>
+                <button class="btn-open">Открыть</button>
+            </div>
+            <div class="case-card premium" data-case="oligarch" data-sound="hover">
+                <div class="case-badge premium-badge">VIP</div>
+                <div class="case-3d">
+                    <div class="case-box"></div>
+                </div>
+                <h3>Олигарх</h3>
+                <p class="case-price"><span class="old-price">12000</span> 10000 ⭐</p>
+                <button class="btn-open">Открыть</button>
+            </div>
+            <div class="case-card premium" data-case="whale" data-sound="hover">
+                <div class="case-badge premium-badge">ELITE</div>
+                <div class="case-3d">
+                    <div class="case-box"></div>
+                </div>
+                <h3>Кит</h3>
+                <p class="case-price"><span class="old-price">23000</span> 19999 ⭐</p>
+                <button class="btn-open">Открыть</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- NFT Collections -->
+    <section class="section nft-section">
+        <h2 class="section-title">НАШИ СБОРКИ NFT</h2>
+        <div class="cases-grid nft">
+            <div class="case-card nft-card epic" data-sound="hover">
+                <div class="holographic-border"></div>
+                <h3>EPIC</h3>
+                <p class="case-price"><span class="old-price">0</span> 1000 ⭐</p>
+                <button class="btn-open">Открыть</button>
+            </div>
+            <div class="case-card nft-card legendary" data-sound="hover">
+                <div class="holographic-border"></div>
+                <h3>LEGENDARY</h3>
+                <p class="case-price"><span class="old-price">0</span> 2000 ⭐</p>
+                <button class="btn-open">Открыть</button>
+            </div>
+            <div class="case-card nft-card arcane" data-sound="hover">
+                <div class="holographic-border"></div>
+                <h3>ARCANE</h3>
+                <p class="case-price"><span class="old-price">0</span> 3000 ⭐</p>
+                <button class="btn-open">Открыть</button>
+            </div>
+            <div class="case-card nft-card joker" data-sound="hover">
+                <div class="holographic-border"></div>
+                <h3>JOKER</h3>
+                <p class="case-price"><span class="old-price">0</span> 5000 ⭐</p>
+                <button class="btn-open">Открыть</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- All In Cases -->
+    <section class="section allin-section">
+        <h2 class="section-title">ALL IN КЕЙСЫ</h2>
+        <div class="cases-grid allin">
+            <div class="case-card allin-card" data-sound="hover">
+                <h3>Swiss Watch All in</h3>
+                <p class="case-price">200 ⭐</p>
+                <button class="btn-open">Открыть</button>
+            </div>
+            <div class="case-card allin-card" data-sound="hover">
+                <h3>Neko Helmet All in</h3>
+                <p class="case-price">200 ⭐</p>
+                <button class="btn-open">Открыть</button>
+            </div>
+            <div class="case-card allin-card" data-sound="hover">
+                <h3>Durov's Cap All in</h3>
+                <p class="case-price">200 ⭐</p>
+                <button class="btn-open">Открыть</button>
+            </div>
+            <div class="case-card allin-card" data-sound="hover">
+                <h3>Pepe All in</h3>
+                <p class="case-price">200 ⭐</p>
+                <button class="btn-open">Открыть</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gift Cases -->
+    <section class="section gift-section">
+        <h2 class="section-title">КЕЙСЫ ЗА ПОДАРКИ</h2>
+        <div class="cases-grid gift">
+            <div class="case-card gift-card" data-sound="hover">
+                <div class="case-icon">🎁</div>
+                <h3>Активный</h3>
+                <p class="case-price">🎁 5</p>
+                <button class="btn-open">Открыть</button>
+            </div>
+            <div class="case-card gift-card" data-sound="hover">
+                <div class="case-icon">🎁</div>
+                <h3>Продвинутый</h3>
+                <p class="case-price">🎁 10</p>
+                <button class="btn-open">Открыть</button>
+            </div>
+            <div class="case-card gift-card" data-sound="hover">
+                <div class="case-icon">🎁</div>
+                <h3>Эксперт</h3>
+                <p class="case-price">🎁 15</p>
+                <button class="btn-open">Открыть</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Chatbot -->
+    <div class="ai-chatbot" id="aiChatbot">
+        <div class="chatbot-header">
+            <span>AI Помощник</span>
+            <button class="chatbot-close">✕</button>
+        </div>
+        <div class="chatbot-body">
+            <p>Привет! Я AI-помощник. Чем могу помочь?</p>
+        </div>
+    </div>
+    <button class="chatbot-trigger" id="chatbotTrigger">💬</button>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2025 tg-case.ru</p>
+        <p>На нашем сайте вы можете открыть различные кейсы с подарками по самым выгодным ценам.</p>
+        <div class="footer-links">
+            <a href="#">Пользовательское соглашение</a>
+            <a href="#">Privacy Policy</a>
+            <a href="faq.html">FAQ</a>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2>Войти</h2>
+            <div class="login-buttons">
+                <button class="btn-social google">Google</button>
+                <button class="btn-social vk">VK</button>
+                <button class="btn-social telegram">Telegram</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

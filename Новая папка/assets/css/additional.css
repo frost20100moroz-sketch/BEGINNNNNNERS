@@ -1,0 +1,226 @@
+
+/* Additional Styles for Pages */
+
+.leaderboard {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.leader-item {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.leader-item:hover {
+    transform: translateX(10px);
+    border-color: var(--primary);
+}
+
+.leader-item.top-1 {
+    background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), rgba(255, 215, 0, 0.05));
+    border-color: #FFD700;
+}
+
+.leader-item.top-2 {
+    background: linear-gradient(135deg, rgba(192, 192, 192, 0.1), rgba(192, 192, 192, 0.05));
+    border-color: #C0C0C0;
+}
+
+.leader-item.top-3 {
+    background: linear-gradient(135deg, rgba(205, 127, 50, 0.1), rgba(205, 127, 50, 0.05));
+    border-color: #CD7F32;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+    border-color: var(--primary);
+    box-shadow: 0 10px 30px rgba(139, 92, 246, 0.3);
+}
+
+.faq-item h3 {
+    color: var(--primary-light);
+    margin-bottom: 1rem;
+}
+
+.upgrader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 3rem 0;
+    flex-wrap: wrap;
+}
+
+.upgrade-box {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 2rem;
+    text-align: center;
+    min-width: 250px;
+}
+
+.item-slot {
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    margin-top: 1rem;
+    border: 2px dashed rgba(255, 255, 255, 0.2);
+}
+
+.upgrade-arrow {
+    font-size: 3rem;
+    color: var(--primary);
+}
+
+.upgrade-stats {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    margin: 2rem 0;
+}
+
+.upgrade-stats .stat {
+    text-align: center;
+}
+
+.upgrade-stats .stat span:first-child {
+    display: block;
+    color: var(--text-gray);
+    margin-bottom: 0.5rem;
+}
+
+.upgrade-stats .stat span:last-child {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-light);
+}
+
+.btn-upgrade {
+    display: block;
+    margin: 2rem auto;
+    padding: 1.5rem 4rem;
+    background: var(--gradient-primary);
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-upgrade:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 40px rgba(139, 92, 246, 0.6);
+}
+
+.profile-info {
+    max-width: 400px;
+    margin: 2rem auto;
+}
+
+.balance {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 2rem;
+    text-align: center;
+}
+
+.balance-amount {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--secondary-light);
+    margin: 1rem 0;
+}
+
+.btn-deposit {
+    padding: 1rem 3rem;
+    background: var(--gradient-secondary);
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-deposit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(6, 182, 212, 0.5);
+}
+
+.inventory-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.inventory-item {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.inventory-item:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary);
+}
+
+.item-price {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--accent-light);
+    margin: 1rem 0;
+}
+
+.btn-claim {
+    width: 100%;
+    padding: 1rem;
+    background: var(--gradient-accent);
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-claim:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(236, 72, 153, 0.5);
+}
